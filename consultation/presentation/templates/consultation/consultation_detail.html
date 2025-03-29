@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Détail de la Consultation</title>
+</head>
+<body>
+    <h1>Consultation #{{ consultation.pk }}</h1>
+    <p>Patient : {{ consultation.patient }}</p>
+    <p>Date : {{ consultation.date }}</p>
+    <p>Notes : {{ consultation.notes }}</p>
+    <a href="{% url 'consultation_list' %}">Retour à la liste</a>
+</body>
+</html>

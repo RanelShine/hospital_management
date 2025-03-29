@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Détail du Rendez-vous</title>
+</head>
+<body>
+    <h1>Rendez-vous #{{ appointment.pk }}</h1>
+    <p>Patient : {{ appointment.patient }}</p>
+    <p>Date : {{ appointment.date }}</p>
+    <p>Description : {{ appointment.description }}</p>
+    <a href="{% url 'appointment_list' %}">Retour à la liste</a>
+</body>
+</html>

@@ -1,0 +1,2 @@
+class AppointmentNotFoundException(Exception):
+    pass

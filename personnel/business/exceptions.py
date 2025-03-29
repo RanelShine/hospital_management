@@ -1,0 +1,2 @@
+class PersonnelNotFoundException(Exception):
+    pass

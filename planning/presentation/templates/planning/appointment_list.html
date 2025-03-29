@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste des Rendez-vous</title>
+</head>
+<body>
+    <h1>Liste des Rendez-vous</h1>
+    <ul>
+        {% for appointment in appointments %}
+            <li>
+                <a href="{% url 'appointment_detail' appointment.pk %}">
+                    Rendez-vous #{{ appointment.pk }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'appointment_create' %}">Ajouter un rendez-vous</a>
+</body>
+</html>

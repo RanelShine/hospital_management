@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste des Consultations</title>
+</head>
+<body>
+    <h1>Liste des Consultations</h1>
+    <ul>
+        {% for consultation in consultations %}
+            <li>
+                <a href="{% url 'consultation_detail' consultation.pk %}">
+                    Consultation #{{ consultation.pk }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'consultation_create' %}">Ajouter une consultation</a>
+</body>
+</html>

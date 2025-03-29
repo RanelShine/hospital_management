@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste du Personnel</title>
+</head>
+<body>
+    <h1>Liste du Personnel</h1>
+    <ul>
+        {% for staff in staff %}
+            <li>
+                <a href="{% url 'personnel_detail' staff.pk %}">
+                    {{ staff.first_name }} {{ staff.last_name }} - {{ staff.role }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'personnel_create' %}">Ajouter un membre du personnel</a>
+</body>
+</html>

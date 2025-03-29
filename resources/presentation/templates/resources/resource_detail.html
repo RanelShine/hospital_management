@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Détail de la Ressource</title>
+</head>
+<body>
+    <h1>{{ resource.name }} - {{ resource.type }}</h1>
+    <p>Status : {{ resource.status }}</p>
+    <a href="{% url 'resource_list' %}">Retour à la liste</a>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Détail du Patient</title>
+</head>
+<body>
+    <h1>{{ patient.first_name }} {{ patient.last_name }}</h1>
+    <p>Date de naissance : {{ patient.date_of_birth }}</p>
+    <p>Email : {{ patient.email }}</p>
+    <p>Téléphone : {{ patient.phone }}</p>
+    <a href="{% url 'patient_list' %}">Retour à la liste</a>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ajouter un Rendez-vous</title>
+</head>
+<body>
+    <h1>Ajouter un Rendez-vous</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Créer</button>
+    </form>
+    <a href="{% url 'appointment_list' %}">Annuler</a>
+</body>
+</html>

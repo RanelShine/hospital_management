@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Détail du Personnel</title>
+</head>
+<body>
+    <h1>{{ staff_member.first_name }} {{ staff_member.last_name }}</h1>
+    <p>Rôle : {{ staff_member.role }}</p>
+    <p>Email : {{ staff_member.email }}</p>
+    <a href="{% url 'personnel_list' %}">Retour à la liste</a>
+</body>
+</html>
